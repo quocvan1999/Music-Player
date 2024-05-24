@@ -1,0 +1,65 @@
+.music {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+#music__img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: top top;
+    border-radius: 50%;
+}
+
+.animationCT {
+    animation: xoayTron infinite 10s linear;
+}
+
+.activeIcon {
+    color: black !important;
+}
+
+.seek_slider,
+.volume_slider {
+    webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border: 1px solid transparent;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    border: 1px solid #19FAFA;
+    height: 17px;
+    width: 17px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+svg {
+    opacity: 1;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+svg:hover {
+    opacity: 0.8;
+}
+
+
+@keyframes xoayTron {
+    to {
+        transform: rotate(0deg)
+    }
+
+    from {
+        transform: rotate(360deg)
+    }
+}

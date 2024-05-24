@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="music d-flex">
+        <div class="m-auto p-5 rounded-4 text-center text-white d-flex flex-column align-items-center justify-content-center"
+            style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; min-width: 400px; max-width: 400px;">
+            <p id="indexMusic" class="fs-5 mb-0"></p>
+            <div id="music__img" class="my-4"></div>
+            <h3 id="music__name" class="mb-0">Lily</h3>
+            <p id="singer__name">Alan Walker</p>
+            <div class="d-flex w-100 align-items-center">
+                <label id="time__remaining" for="">00:00</label>
+                <input id="time__line" min="0" max="100" class="w-100 mx-2 seek_slider" value="0" type="range">
+                <label id="music__time" for="">00:00</label>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+                <i class="fa-solid fa-volume-low"></i>
+                <input id="volume__line" class="volume_slider mx-2" min="0" max="100" value="0" type="range">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="d-flex align-items-center justify-content-between w-100 mt-4">
+                <button id="btnShuffle" class="text-white btn">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <button id="btnBackward" class="btn text-white">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button id="btnPlay" class="btn bg-white rounded-circle p-2" style="width: 45px; height: 45px;">
+                    <i id="iconPlay" class="fa-solid fa-play" style="display: inline-block;"></i>
+                    <i id="iconPause" class="fa-solid fa-pause" style="display: none;"></i>
+                </button>
+                <button id="btnForward" class="btn text-white">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+                <button id="btnRepeat" class="btn text-white">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MAIN JS -->
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>
